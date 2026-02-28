@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Student Expenditure</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js" defer></script>
+    </head>
+    <body>
+        <h1>Student Expenditure</h1>
+        
+        <div id="expense">
+            <label>Enter Budget : </label>
+            <input type="number" id="budget" placeholder="Rs.123"></input>
+            <button type="submit" >Submit</button>
+        </div>
+
+        <div id="box">
+            <fieldset>
+                <legend>Expenses</legend>
+
+                <label>Enter Object Name :</label>
+                <input type="text" id="object" placeholder="object name"></input>
+
+                <br><br>
+
+                <label>Enter Object Price : </label>
+                <input type="number" id="price" placeholder="Rs.123"></input>
+
+                <br><br>
+
+                <button type="button" onclick="Process()">ADD</button>
+
+            </fieldset>
+
+            <table>
+                <tr>
+                    <th>Object name</th>
+                    <th>Price</th>
+                </tr>
+            </table>
+
+            <div id="total">
+                <p>Total = Rs.0</p>
+            </div>
+
+            <div id="max">
+                <p>Maximum = Rs.0</p>
+            </div>
+
+            <div id="warning">
+
+            </div>
+        </div>
+    </body>
+</html>
